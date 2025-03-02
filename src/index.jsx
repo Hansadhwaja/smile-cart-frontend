@@ -2,6 +2,7 @@ import React from "react";
 
 import initializeAxios from "apis/axios";
 import ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import { QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -21,7 +22,9 @@ root.render(
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <ToastContainer />
-        <App />
+        <HelmetProvider>
+          <App />
+        </HelmetProvider>
       </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>

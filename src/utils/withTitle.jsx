@@ -1,5 +1,5 @@
 import { t } from "i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const withTitle = (Component, title) => {
   const PageTitle = props => {
