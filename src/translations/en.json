@@ -31,5 +31,7 @@
     "quantityLimit_one": "Only 1 unit is available",
     "quantityLimit_other": "Only {{count}} units are available",
     "removedFromCart": "{{name}} is no longer available and has been removed from cart"
-  }
+  },
+  "pageTitle": "{{title}} | Smile Cart",
+  "product": "Product"
 }
